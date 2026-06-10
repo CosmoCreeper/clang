@@ -28,7 +28,11 @@ path=$1
 shift
 script_args=$@
 launch_exe() {
-  exe_path="./build/$1/$(basename $1)"
+  if [[ "$OSTYPE" == "msys" ]]; then
+    exe_path="./build/$1/Release/$(basename $1)"
+  else
+    exe_path="./build/$1/$(basename $1)"
+  fi
 
   if [[ -f $exe_path ]] then
     $exe_path $script_args
