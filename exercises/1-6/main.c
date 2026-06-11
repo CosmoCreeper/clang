@@ -7,7 +7,7 @@
 
 int main()
 {
-  printf(getchar() != EOF);
+  printf("%d\n", getchar() != EOF);
 
   return 0;
 }
