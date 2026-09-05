@@ -3,4 +3,6 @@ add_subdirectory(1-4)
 add_subdirectory(1-5)
 add_subdirectory(1-6)
 add_subdirectory(1-7)
-
+add_subdirectory(1-8)
+add_subdirectory(1-9)
+add_subdirectory(1-10)
